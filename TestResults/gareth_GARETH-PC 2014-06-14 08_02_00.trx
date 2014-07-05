@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="e1143d9a-83ec-4e3e-9b4c-9830e5f8aa04" name="gareth@GARETH-PC 2014-06-14 08:02:00" runUser="GARETH-PC\gareth" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="7b6251a2-aa50-44bd-9269-8640add2f1a0">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="gareth_GARETH-PC 2014-06-14 08_02_00">
+      <DeploymentItem filename="C:\Development\SchemaBackup\SchemaBackupLibrary\bin\Debug\SchemaBackup.Core.dll" />
+      <DeploymentItem filename="C:\Development\SchemaBackup\SchemaBackup.Definitions\bin\Debug\SchemaBackup.Definitions.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-06-14T08:02:00.8386411+01:00" queuing="2014-06-14T08:02:02.7686438+01:00" start="2014-06-14T08:02:02.9986442+01:00" finish="2014-06-14T08:04:46.5260978+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ProcessStoredProcedure" storage="c:\development\schemabackup\schemabackup.tests\bin\debug\schemabackup.tests.dll" id="ca39d4e0-a7c1-48af-033c-82c2a2099220">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Schema Object" />
+      </TestCategory>
+      <Execution id="3a06127c-9d3f-448f-ab88-bc85c5e3dd6e" />
+      <TestMethod codeBase="C:/Development/SchemaBackup/SchemaBackup.Tests/bin/Debug/SchemaBackup.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SchemaBackup.Tests.UnitTest1, SchemaBackup.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ProcessStoredProcedure" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ca39d4e0-a7c1-48af-033c-82c2a2099220" executionId="3a06127c-9d3f-448f-ab88-bc85c5e3dd6e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="3a06127c-9d3f-448f-ab88-bc85c5e3dd6e" testId="ca39d4e0-a7c1-48af-033c-82c2a2099220" testName="ProcessStoredProcedure" computerName="GARETH-PC" duration="00:02:39.6104726" startTime="2014-06-14T08:02:03.1986444+01:00" endTime="2014-06-14T08:04:44.7460953+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3a06127c-9d3f-448f-ab88-bc85c5e3dd6e">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method SchemaBackup.Tests.UnitTest1.ProcessStoredProcedure threw exception: 
+System.InvalidCastException: Unable to cast object of type 'System.Data.DataRow' to type 'System.String'.</Message>
+          <StackTrace>    at SchemaBackup.Core.SchemaObject.GetRaw() in C:\Development\SchemaBackup\SchemaBackupLibrary\SchemaObject.cs:line 96
+   at SchemaBackup.Core.SchemaObject.GetInfo() in C:\Development\SchemaBackup\SchemaBackupLibrary\SchemaObject.cs:line 72
+   at SchemaBackup.Tests.UnitTest1.ProcessStoredProcedure() in C:\Development\SchemaBackup\SchemaBackup.Tests\UnitTest1.cs:line 56
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SchemaBackup\SchemaCopier.cs">
+    <Files>
+      <File FileName="SchemaBackup\Service1.cs" Line="19" Column="55" />
+      <File FileName="SchemaBackup\EmailHandler.cs" Line="10" Column="3" />
+      <File FileName="SchemaBackup\SchemaCopier.cs" Line="26" Column="31" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Development\SchemaBackup\SchemaBackup\SchemaCopier.cs" line="26" column="31" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

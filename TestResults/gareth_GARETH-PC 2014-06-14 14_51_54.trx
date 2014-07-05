@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="8e603a9c-fc6f-42cc-a046-9b692e612b53" name="gareth@GARETH-PC 2014-06-14 14:51:54" runUser="GARETH-PC\gareth" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="7b6251a2-aa50-44bd-9269-8640add2f1a0">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="gareth_GARETH-PC 2014-06-14 14_51_54">
+      <DeploymentItem filename="C:\Development\SchemaBackup\SchemaBackupLibrary\bin\Debug\SchemaBackup.Core.dll" />
+      <DeploymentItem filename="C:\Development\SchemaBackup\SchemaBackup.Definitions\bin\Debug\SchemaBackup.Definitions.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-06-14T14:51:54.3971787+01:00" queuing="2014-06-14T14:51:56.6471819+01:00" start="2014-06-14T14:51:56.8171821+01:00" finish="2014-06-14T14:56:04.7990650+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ProcessDatabaseObjects" storage="c:\development\schemabackup\schemabackup.tests\bin\debug\schemabackup.tests.dll" id="5c20b0df-e257-1b76-d9bb-ed3a92997b0a">
+      <Execution id="a9fd778e-8a7a-473e-be55-c0d122cfd024" />
+      <TestMethod codeBase="C:/Development/SchemaBackup/SchemaBackup.Tests/bin/Debug/SchemaBackup.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SchemaBackup.Tests.UnitTest1, SchemaBackup.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ProcessDatabaseObjects" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="5c20b0df-e257-1b76-d9bb-ed3a92997b0a" executionId="a9fd778e-8a7a-473e-be55-c0d122cfd024" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a9fd778e-8a7a-473e-be55-c0d122cfd024" testId="5c20b0df-e257-1b76-d9bb-ed3a92997b0a" testName="ProcessDatabaseObjects" computerName="GARETH-PC" duration="00:04:05.9748514" startTime="2014-06-14T14:51:57.0171824+01:00" endTime="2014-06-14T14:56:04.5690647+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a9fd778e-8a7a-473e-be55-c0d122cfd024">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method SchemaBackup.Tests.UnitTest1.ProcessDatabaseObjects threw exception: 
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\SchemaBackupTemp\GARETH-PC\SQLEXPRESS\MusicPlayer\Table\Table\Album.sql'.</Message>
+          <StackTrace>    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize, Boolean checkHost)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendText(String path)
+   at SchemaBackup.Core.ObjectWriter..ctor(String fileName)
+   at SchemaBackup.Core.SchemaObject..ctor(String databaseConnectionStr, String workingPath, ObjectType objectType, String name)
+   at SchemaBackup.Core.Schema.Process()
+   at SchemaBackup.Tests.UnitTest1.ProcessDatabaseObjects() in C:\Development\SchemaBackup\SchemaBackup.Tests\UnitTest1.cs:line 40
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

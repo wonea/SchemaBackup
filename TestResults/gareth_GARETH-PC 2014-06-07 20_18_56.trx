@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="e6b5113e-9c0f-40fb-af01-212800c44a60" name="gareth@GARETH-PC 2014-06-07 20:18:56" runUser="GARETH-PC\gareth" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="7b6251a2-aa50-44bd-9269-8640add2f1a0">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="gareth_GARETH-PC 2014-06-07 20_18_56">
+      <DeploymentItem filename="C:\Development\SchemaBackup\SchemaBackupLibrary\bin\Debug\SchemaBackup.Core.dll" />
+      <DeploymentItem filename="C:\Development\SchemaBackup\SchemaBackup.Definitions\bin\Debug\SchemaBackup.Definitions.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-06-07T20:18:56.6790602+01:00" queuing="2014-06-07T20:18:59.1770942+01:00" start="2014-06-07T20:18:59.3370945+01:00" finish="2014-06-07T20:19:23.6621612+01:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="GARETH-PC" outcome="Error" timestamp="2014-06-07T20:19:23.6521611+01:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ProcessObject" storage="c:\development\schemabackup\schemabackup.tests\bin\debug\schemabackup.tests.dll" id="63a3e5f4-a043-ca6b-6eef-6060ee6c8c9c">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Schema Object" />
+      </TestCategory>
+      <Execution id="184f170c-875c-48a7-83a2-4676e81e05cc" />
+      <TestMethod codeBase="C:/Development/SchemaBackup/SchemaBackup.Tests/bin/Debug/SchemaBackup.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SchemaBackup.Tests.UnitTest1, SchemaBackup.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ProcessObject" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="63a3e5f4-a043-ca6b-6eef-6060ee6c8c9c" executionId="184f170c-875c-48a7-83a2-4676e81e05cc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="184f170c-875c-48a7-83a2-4676e81e05cc" testId="63a3e5f4-a043-ca6b-6eef-6060ee6c8c9c" testName="ProcessObject" computerName="GARETH-PC" duration="00:00:24.2450666" startTime="2014-06-07T20:18:59.4170946+01:00" endTime="2014-06-07T20:19:23.6621612+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="184f170c-875c-48a7-83a2-4676e81e05cc">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchemaBackup.Service", "SchemaBackup\SchemaBackup.Service.csproj", "{7B41089B-DCF7-47A7-964F-2D54F0B2BA75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchemaBackup.Core", "SchemaBackupLibrary\SchemaBackup.Core.csproj", "{38555365-ABD0-4DAB-AE37-39CC68D9CD60}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchemaBackup.Definitions", "SchemaBackup.Definitions\SchemaBackup.Definitions.csproj", "{7705577B-CF01-43DC-8C8F-ED78770717CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchemaBackup.Tests", "SchemaBackup.Tests\SchemaBackup.Tests.csproj", "{C4BE1D2E-2139-424E-ABC9-77AB793E403C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{13803A5C-9FDF-4428-B307-E3E60D667BC9}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		SchemaBackup.vsmdi = SchemaBackup.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = SchemaBackup.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7B41089B-DCF7-47A7-964F-2D54F0B2BA75}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7B41089B-DCF7-47A7-964F-2D54F0B2BA75}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{7B41089B-DCF7-47A7-964F-2D54F0B2BA75}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{7B41089B-DCF7-47A7-964F-2D54F0B2BA75}.Debug|x86.ActiveCfg = Debug|x86
+		{7B41089B-DCF7-47A7-964F-2D54F0B2BA75}.Debug|x86.Build.0 = Debug|x86
+		{7B41089B-DCF7-47A7-964F-2D54F0B2BA75}.Release|Any CPU.ActiveCfg = Release|x86
+		{7B41089B-DCF7-47A7-964F-2D54F0B2BA75}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{7B41089B-DCF7-47A7-964F-2D54F0B2BA75}.Release|Mixed Platforms.Build.0 = Release|x86
+		{7B41089B-DCF7-47A7-964F-2D54F0B2BA75}.Release|x86.ActiveCfg = Release|x86
+		{7B41089B-DCF7-47A7-964F-2D54F0B2BA75}.Release|x86.Build.0 = Release|x86
+		{38555365-ABD0-4DAB-AE37-39CC68D9CD60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38555365-ABD0-4DAB-AE37-39CC68D9CD60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38555365-ABD0-4DAB-AE37-39CC68D9CD60}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{38555365-ABD0-4DAB-AE37-39CC68D9CD60}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{38555365-ABD0-4DAB-AE37-39CC68D9CD60}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{38555365-ABD0-4DAB-AE37-39CC68D9CD60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38555365-ABD0-4DAB-AE37-39CC68D9CD60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38555365-ABD0-4DAB-AE37-39CC68D9CD60}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{38555365-ABD0-4DAB-AE37-39CC68D9CD60}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{38555365-ABD0-4DAB-AE37-39CC68D9CD60}.Release|x86.ActiveCfg = Release|Any CPU
+		{7705577B-CF01-43DC-8C8F-ED78770717CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7705577B-CF01-43DC-8C8F-ED78770717CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7705577B-CF01-43DC-8C8F-ED78770717CC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7705577B-CF01-43DC-8C8F-ED78770717CC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7705577B-CF01-43DC-8C8F-ED78770717CC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7705577B-CF01-43DC-8C8F-ED78770717CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7705577B-CF01-43DC-8C8F-ED78770717CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7705577B-CF01-43DC-8C8F-ED78770717CC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{7705577B-CF01-43DC-8C8F-ED78770717CC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{7705577B-CF01-43DC-8C8F-ED78770717CC}.Release|x86.ActiveCfg = Release|Any CPU
+		{C4BE1D2E-2139-424E-ABC9-77AB793E403C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4BE1D2E-2139-424E-ABC9-77AB793E403C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4BE1D2E-2139-424E-ABC9-77AB793E403C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C4BE1D2E-2139-424E-ABC9-77AB793E403C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C4BE1D2E-2139-424E-ABC9-77AB793E403C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C4BE1D2E-2139-424E-ABC9-77AB793E403C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4BE1D2E-2139-424E-ABC9-77AB793E403C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4BE1D2E-2139-424E-ABC9-77AB793E403C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C4BE1D2E-2139-424E-ABC9-77AB793E403C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C4BE1D2E-2139-424E-ABC9-77AB793E403C}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = SchemaBackup\SchemaBackupService.csproj
+	EndGlobalSection
+EndGlobal

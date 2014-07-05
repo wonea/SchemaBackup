@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="544477aa-9019-45ae-b70f-1595f41779db" name="gareth@GARETH-PC 2014-06-07 21:20:03" runUser="GARETH-PC\gareth" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="7b6251a2-aa50-44bd-9269-8640add2f1a0">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="gareth_GARETH-PC 2014-06-07 21_20_03">
+      <DeploymentItem filename="C:\Development\SchemaBackup\SchemaBackupLibrary\bin\Debug\SchemaBackup.Core.dll" />
+      <DeploymentItem filename="C:\Development\SchemaBackup\SchemaBackup.Definitions\bin\Debug\SchemaBackup.Definitions.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-06-07T21:20:03.4159375+01:00" queuing="2014-06-07T21:20:05.6159406+01:00" start="2014-06-07T21:20:05.8259409+01:00" finish="2014-06-07T21:20:37.5859853+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ProcessObject" storage="c:\development\schemabackup\schemabackup.tests\bin\debug\schemabackup.tests.dll" id="63a3e5f4-a043-ca6b-6eef-6060ee6c8c9c">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Schema Object" />
+      </TestCategory>
+      <Execution id="202cf45a-ca28-49c9-abcb-a179d75dab04" />
+      <TestMethod codeBase="C:/Development/SchemaBackup/SchemaBackup.Tests/bin/Debug/SchemaBackup.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SchemaBackup.Tests.UnitTest1, SchemaBackup.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ProcessObject" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="63a3e5f4-a043-ca6b-6eef-6060ee6c8c9c" executionId="202cf45a-ca28-49c9-abcb-a179d75dab04" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="202cf45a-ca28-49c9-abcb-a179d75dab04" testId="63a3e5f4-a043-ca6b-6eef-6060ee6c8c9c" testName="ProcessObject" computerName="GARETH-PC" duration="00:00:29.1774739" startTime="2014-06-07T21:20:05.9759411+01:00" endTime="2014-06-07T21:20:37.3259850+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="202cf45a-ca28-49c9-abcb-a179d75dab04">
+    </UnitTestResult>
+  </Results>
+</TestRun>
