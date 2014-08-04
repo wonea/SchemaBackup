@@ -1,0 +1,8 @@
+SchemaBackup/bin/Debug/SchemaBackup.Service.exe.config
+*.exe
+SchemaBackup/bin/Debug/SchemaBackup.Service.vshost.exe.config
+SchemaBackup/bin/Debug/SchemaBackup.Service.vshost.exe.manifest
+SchemaBackup/obj/x86/Debug/SchemaBackup.Service.csproj.FileListAbsolute.txt
+SchemaBackup.Definitions/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+*.suo
+SchemaBackup.suo
