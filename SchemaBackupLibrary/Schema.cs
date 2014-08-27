@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 using SchemaBackup.Definitions;
 using System.IO;
 
-namespace SchemaBackup.Core
+namespace SchemaBackup.Scheme
 {
     public class Schema : ObjectDefinition
     {

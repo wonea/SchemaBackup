@@ -8,8 +8,8 @@
     <ProjectGuid>{38555365-ABD0-4DAB-AE37-39CC68D9CD60}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SchemaBackup.Core</RootNamespace>
-    <AssemblyName>SchemaBackup.Core</AssemblyName>
+    <RootNamespace>SchemaBackup.Scheme</RootNamespace>
+    <AssemblyName>SchemaBackup.Scheme</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -45,12 +45,15 @@
     <Compile Include="AttributeHelper.cs" />
     <Compile Include="Schema.cs" />
     <Compile Include="SchemaObject.cs" />
-    <Compile Include="SQL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Table.cs" />
     <Compile Include="ObjectWriter.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SchemaBackup.Core\SchemaBackup.Core.csproj">
+      <Project>{2759EEF7-885B-4084-B4AB-10958D51DF91}</Project>
+      <Name>SchemaBackup.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SchemaBackup.Definitions\SchemaBackup.Definitions.csproj">
       <Project>{7705577B-CF01-43DC-8C8F-ED78770717CC}</Project>
       <Name>SchemaBackup.Definitions</Name>

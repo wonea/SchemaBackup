@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SchemaBackup.Tests.Properties;
-using SchemaBackup.Core;
 using System.Data;
 using System.Data.SqlClient;
 using SchemaBackup.Definitions;
+using SchemaBackup.Core;
+using SchemaBackup.Scheme;
 
 namespace SchemaBackup.Tests
 {
@@ -32,7 +33,7 @@ namespace SchemaBackup.Tests
         [TestMethod]
         public void GetObjectInfo()
         {
-            IEnumerable<DataTable> datatables = 
+            IEnumerable<DataTable> datatables =
                 SqlMethods.ExecuteDataTableReturnCommand(DbConnectionStrings[0], "sp_help @Name", new SqlParameter("Name", "Track"));
         }
 

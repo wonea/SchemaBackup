@@ -5,8 +5,9 @@ using System.Text;
 using SchemaBackup.Definitions;
 using System.Data.SqlClient;
 using System.Data;
+using SchemaBackup.Core;
 
-namespace SchemaBackup.Core
+namespace SchemaBackup.Scheme
 {
     public class Table : Schema
     {

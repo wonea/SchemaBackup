@@ -74,5 +74,17 @@ namespace SchemaBackup.Service.Properties {
                 return ((global::System.Collections.Specialized.StringCollection)(this["ObjectsToIgnore"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\SchemaBackupTemp\\settings.xml")]
+        public string SettingFileLocation {
+            get {
+                return ((string)(this["SettingFileLocation"]));
+            }
+            set {
+                this["SettingFileLocation"] = value;
+            }
+        }
     }
 }

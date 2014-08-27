@@ -5,7 +5,7 @@ using System.Text;
 using System.IO;
 using System.Data;
 
-namespace SchemaBackup.Core
+namespace SchemaBackup.Scheme
 {
     public class ObjectWriter
     {

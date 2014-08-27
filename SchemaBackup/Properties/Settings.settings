@@ -33,5 +33,8 @@
   &lt;string&gt;fn_diagramobjects&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
+    <Setting Name="SettingFileLocation" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\SchemaBackupTemp\settings.xml</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

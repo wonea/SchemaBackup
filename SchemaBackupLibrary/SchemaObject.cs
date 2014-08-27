@@ -8,8 +8,9 @@ using SchemaBackup.Definitions;
 using Microsoft.Data.Schema.ScriptDom.Sql;
 using Microsoft.Data.Schema.ScriptDom;
 using System.IO;
+using SchemaBackup.Core;
 
-namespace SchemaBackup.Core
+namespace SchemaBackup.Scheme
 {
     public class SchemaObject : Schema
     {
