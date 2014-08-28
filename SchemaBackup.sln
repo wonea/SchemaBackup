@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchemaBackup.Service", "SchemaBackup\SchemaBackup.Service.csproj", "{7B41089B-DCF7-47A7-964F-2D54F0B2BA75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchemaBackup.Scheme", "SchemaBackupLibrary\SchemaBackup.Scheme.csproj", "{38555365-ABD0-4DAB-AE37-39CC68D9CD60}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchemaBackup.Scheme", "SchemaBackup.Scheme\SchemaBackup.Scheme.csproj", "{38555365-ABD0-4DAB-AE37-39CC68D9CD60}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchemaBackup.Definitions", "SchemaBackup.Definitions\SchemaBackup.Definitions.csproj", "{7705577B-CF01-43DC-8C8F-ED78770717CC}"
 EndProject

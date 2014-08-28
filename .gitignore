@@ -36,3 +36,9 @@ SchemaBackup.AdminApp/obj/x86/Debug/DeploymentUserControl.baml
 SchemaBackup.AdminApp/obj/x86/Debug/App.baml
 SchemaBackup.AdminApp/obj/x86/Debug/DeploymentUserControl.g.cs
 SchemaBackup.AdminApp/obj/x86/Debug/DeploymentUserControl.g.i.cs
+SchemaBackup.Scheme/obj/Debug/SchemaBackup.Core.csproj.FileListAbsolute.txt
+SchemaBackup.Scheme/obj/Debug/SchemaBackup.Schema.csproj.FileListAbsolute.txt
+SchemaBackup.Scheme/obj/Debug/SchemaBackup.Scheme.csproj.FileListAbsolute.txt
+*.suo
+*.suo
+SchemaBackup.suo
