@@ -3,6 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="standardTextBoxStyle" TargetType="TextBox" >
+            <Setter Property="Height" Value="32" />
+        </Style>
+        <Style x:Key="standardButtonStyle" TargetType="Button" >
+            <Setter Property="Height" Value="32" />
+        </Style>
+        <Style x:Key="standardPasswordBoxStyle" TargetType="PasswordBox" >
+            <Setter Property="Height" Value="32" />
+        </Style>
+        <!-- Row Definition -->
+        <Style x:Key="standardRowDefinitionStyle" TargetType="RowDefinition" >
+            <Setter Property="Height" Value="36" />
+        </Style>
+
+        
+        <!-- Standard Window Buttons -->
+        <Style x:Key="windowButtonStyle" TargetType="Button" >
+            <Setter Property="Height" Value="32" />
+            <Setter Property="Width" Value="75" />
+        </Style>
+        
+        <Style x:Key="standardOkayButtonStyle" TargetType="Button" BasedOn="{StaticResource windowButtonStyle}">
+            <Setter Property="Content" Value="Okay" />
+        </Style>
+        <Style x:Key="standardCancelButtonStyle" TargetType="Button" BasedOn="{StaticResource windowButtonStyle}">
+            <Setter Property="Content" Value="Cancel" />
+        </Style>
+        <Style x:Key="standardCloseButtonStyle" TargetType="Button" BasedOn="{StaticResource windowButtonStyle}">
+            <Setter Property="Content" Value="Close" />
+        </Style>
+        
+        <!-- Stack Panel -->
+        <Style x:Key="windowStackPanelStyle" TargetType="StackPanel">
+            <Setter Property="Orientation" Value="Horizontal" />
+            <Setter Property="HorizontalAlignment" Value="Right" />
+        </Style>
     </Application.Resources>
 </Application>

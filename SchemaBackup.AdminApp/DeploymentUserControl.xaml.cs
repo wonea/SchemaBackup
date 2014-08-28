@@ -9,28 +9,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace SchemaBackup.AdminApp
 {
     /// <summary>
-    /// Interaction logic for AboutWindow.xaml
+    /// Interaction logic for DeploymentUserControl.xaml
     /// </summary>
-    public partial class AboutWindow : Window
+    public partial class DeploymentUserControl : UserControl
     {
-        public AboutWindow()
+        public DeploymentUserControl()
         {
             InitializeComponent();
-        }
-
-        private void okayButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
-        }
-
-        private void cancelButton_Click(object sender, RoutedEventArgs e)
-        {
-            this.Close();
         }
     }
 }

@@ -29,3 +29,10 @@ SchemaBackup.AdminApp/obj/x86/Debug/SchemaBackup.AdminApp.csproj.FileListAbsolut
 SchemaBackup.AdminApp/obj/x86/Debug/SchemaBackup.AdminApp.Properties.Resources.resources
 SchemaBackup.userprefs
 SchemaBackup.AdminApp/obj/x86/Debug/AboutWindow.g.i.cs
+SchemaBackup.AdminApp/bin/Debug/SchemaBackup.AdminApp.vshost.exe.config
+SchemaBackup.AdminApp/obj/x86/Debug/AboutWindow.baml
+SchemaBackup.AdminApp/obj/x86/Debug/AboutWindow.g.cs
+SchemaBackup.AdminApp/obj/x86/Debug/DeploymentUserControl.baml
+SchemaBackup.AdminApp/obj/x86/Debug/App.baml
+SchemaBackup.AdminApp/obj/x86/Debug/DeploymentUserControl.g.cs
+SchemaBackup.AdminApp/obj/x86/Debug/DeploymentUserControl.g.i.cs
