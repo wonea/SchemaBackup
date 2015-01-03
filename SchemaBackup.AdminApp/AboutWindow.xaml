@@ -7,7 +7,7 @@
             <RowDefinition Height="75*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <Label>Schema Backup 2014 by Gareth Brown</Label>
+        <Label>T-SQL Schema Backup 2015 by Gareth Brown</Label>
         <StackPanel Grid.Row="1" Style="{StaticResource windowStackPanelStyle}">
             <Button Name="cancelButton" 
                     Style="{StaticResource standardCloseButtonStyle}" Click="cancelButton_Click" />

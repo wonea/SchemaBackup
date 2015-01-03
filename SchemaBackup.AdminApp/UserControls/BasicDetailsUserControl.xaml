@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="SchemaBackup.AdminApp.UserControls.BasicDetailsUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*" />
+            <ColumnDefinition Width="50*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32" />
+            <RowDefinition Height="32" />
+            <RowDefinition Height="32" />
+        </Grid.RowDefinitions>
+        <Label Grid.Column="0" Grid.Row="0" Content="Name" />
+        <TextBox Grid.Column="1" Grid.Row="0" Name="NameTextBox" Style="{StaticResource standardTextBoxStyle}" />
+        <Label Grid.Column="0" Grid.Row="1" Content="Working Path" />
+        <TextBox Grid.Column="1" Grid.Row="1" Name="WorkingPathTextBox" Style="{StaticResource standardTextBoxStyle}" />
+        <Label Grid.Column="0" Grid.Row="2" Content="Database Connection Str" />
+        <TextBox Grid.Column="1" Grid.Row="2" Name="DatabaseConnectionTextBox" Style="{StaticResource standardTextBoxStyle}" />
+    </Grid>
+</UserControl>

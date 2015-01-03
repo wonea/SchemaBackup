@@ -37,12 +37,6 @@ namespace SchemaBackup.AdminApp
             DataContext = new AppViewModel();
         }
 
-        private void aboutButton_Click(object sender, RoutedEventArgs e)
-        {
-            AboutWindow aboutwindow = new AboutWindow();
-            aboutwindow.Show();
-        }
-
         private void LogTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             LogTextBox.ScrollToEnd();

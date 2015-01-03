@@ -84,6 +84,22 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControls\BasicDetailsUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\CheckFrequencyUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\SvnUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\VpnUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -96,8 +112,21 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AppViewModel.cs" />
+    <Compile Include="Commands\GenericCommandHandler.cs" />
     <Compile Include="DeploymentUserControl.xaml.cs">
       <DependentUpon>DeploymentUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\BasicDetailsUserControl.xaml.cs">
+      <DependentUpon>BasicDetailsUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CheckFrequencyUserControl.xaml.cs">
+      <DependentUpon>CheckFrequencyUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\SvnUserControl.xaml.cs">
+      <DependentUpon>SvnUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\VpnUserControl.xaml.cs">
+      <DependentUpon>VpnUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -130,6 +159,10 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SchemaBackup.Core.ExampleObjects\SchemaBackup.Core.ExampleObjects.csproj">
+      <Project>{7fcc3f0d-4773-4062-8dba-67495488adbc}</Project>
+      <Name>SchemaBackup.Core.ExampleObjects</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SchemaBackup.Core\SchemaBackup.Core.csproj">
       <Project>{2759EEF7-885B-4084-B4AB-10958D51DF91}</Project>
       <Name>SchemaBackup.Core</Name>

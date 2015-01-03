@@ -19,8 +19,6 @@ namespace SchemaBackup
         public string[] DbConnectionStrings;
         public SettingsSerialisation SettingsSerialisation;
         IScheduler sched;
-        IJobDetail job;
-
 
         public Service1()
         {
@@ -39,12 +37,12 @@ namespace SchemaBackup
         {
             // load scheduling details
             ISchedulerFactory sf = new StdSchedulerFactory();
-            IScheduler sched = sf.GetScheduler();
+            sched = sf.GetScheduler();
 
             DateTimeOffset runTime = DateBuilder.EvenMinuteDate(DateTime.UtcNow);
             DateTimeOffset startTime = DateBuilder.NextGivenSecondDate(null, 10);
             const string groupname = "SchemaCopiers";
-            job = JobBuilder.Create<SchemaJob>()
+            IJobDetail job = JobBuilder.Create<SchemaJob>()
                     .WithIdentity("SchemaCopyJob", groupname)
                     .Build();
             // set up triggers for each schema

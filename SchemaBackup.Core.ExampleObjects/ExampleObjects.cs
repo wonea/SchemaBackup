@@ -9,37 +9,40 @@ namespace SchemaBackup.Core.ExampleObjects
 {
     public static class ExampleObjects
     {
-        public static SchemaSettings SchemaSettings()
+        public static SchemaSettings SchemaSettings
         {
-            var schemasetting = new SchemaSettings
+            get
             {
-                Settings = new[]
-                { 
-                    new SchemaSetting
-                    {
-                        Name = "Test Schema",
-                        WorkingPath = @"C:\Temp\",
-                        DBConnectionStr = "test",
-                        VpnCredential = new VpnCredential
+                var schemasetting = new SchemaSettings
+                {
+                    Settings = new[]
+                    { 
+                        new SchemaSetting
                         {
-                            HostName = "test",
-                            Username = "test",
-                            Password = "test"
-                        },
-                        SvnCredential = new SvnCredential
-                        {
-                            Path = new Uri("VisualSVN path"),
-                            UserName = "testuser",
-                            Password = "testpassword"
-                        },
-                        CheckFrequency = new CheckFrequency
-                        {
-                            Frequency = " 0 0 12 1/1 * ? * "
+                            Name = "Test Schema",
+                            WorkingPath = @"C:\Temp\",
+                            DBConnectionStr = "test",
+                            VpnCredential = new VpnCredential
+                            {
+                                HostName = "test",
+                                Username = "test",
+                                Password = "test"
+                            },
+                            SvnCredential = new SvnCredential
+                            {
+                                Path = new Uri("file:\\C:\\Users\\john\\documents\\visual studio 2010\\Projects\\proj"),
+                                UserName = "testuser",
+                                Password = "testpassword"
+                            },
+                            CheckFrequency = new CheckFrequency
+                            {
+                                Frequency = " 0 0 12 1/1 * ? * "
+                            }
                         }
                     }
-                }
-            };
-            return schemasetting;
+                };
+                return schemasetting;
+            }
         }
     }
 }

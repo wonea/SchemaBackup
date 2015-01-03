@@ -1,7 +1,8 @@
 ﻿<Window x:Class="SchemaBackup.AdminApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Schema Backup Admin" Height="350" Width="525"
+        xmlns:ucontrols="clr-namespace:SchemaBackup.AdminApp.UserControls"
+        Title="T-SQL Schema Backup Admin" Height="350" Width="525"
         Closed="Window_Closed" Loaded="Window_Loaded">
     <Grid>
         <Grid.RowDefinitions>
@@ -16,17 +17,27 @@
         <ToolBar Grid.Row="0" Grid.ColumnSpan="2">
             <Button ToolTip="Open Configuration" Name="openButton">Open</Button>
             <Button ToolTip="Deploy Configuration" Name="deployButton">Deploy</Button>
-            <Button ToolTip="About" Name="aboutButton" Click="aboutButton_Click">About</Button>
+            <Button ToolTip="About" Name="aboutButton" Content="About"
+                    Command="{Binding AboutCommand}" CommandParameter="{Binding}" />
         </ToolBar>
-        <ListView Grid.Row="1"  Grid.Column="0" ItemsSource="{Binding SchemaNames}" />
-        <Grid Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Name="deploymentGrid">
-            
-        </Grid>
+        <ListView Grid.Row="1"  Grid.Column="0" 
+                  ItemsSource="{Binding SchemaNames}"
+                  SelectedValue="{Binding SelectedSchemaName}" />
+        <StackPanel Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" 
+                    Name="deploymentStackPanel" Orientation="Vertical">
+            <ucontrols:BasicDetailsUserControl />
+            <ucontrols:CheckFrequencyUserControl />
+            <ucontrols:SvnUserControl />
+            <ucontrols:VpnUserControl />
+        </StackPanel>
         <Expander Grid.Row="2" Grid.ColumnSpan="2">
             <Expander.Header>
                 <StackPanel Orientation="Horizontal">
                     <Label>Log</Label>
-                    <CheckBox Name="LogScrollToEndCheckBox" Style="{StaticResource standardCheckBoxBoxStyle}">Scroll to Bottom</CheckBox>
+                    <CheckBox Name="LogScrollToEndCheckBox" 
+                              Style="{StaticResource standardCheckBoxBoxStyle}"
+                              IsChecked="{Binding ScrollToBottom}"
+                              Content="Scroll to Bottom" />
                 </StackPanel>
             </Expander.Header>
             <TextBox Name="LogTextBox" Text="{Binding LogStr}" TextChanged="LogTextBox_TextChanged"/>

@@ -21,7 +21,13 @@ namespace SchemaBackup.Core
         public void Load()
         {
             string settingsfile = LoadSettings();
-            SchemaSettings = LoadFromXMLString(settingsfile);
+            if (!string.IsNullOrEmpty(settingsfile))
+                SchemaSettings = LoadFromXMLString(settingsfile);
+        }
+
+        public void LoadTestData()
+        {
+            SchemaSettings = ExampleObjects.ExampleObjects.SchemaSettings;
         }
 
         public void Save()
@@ -34,6 +40,10 @@ namespace SchemaBackup.Core
         {
             try
             {
+                // check if file exists
+                if (!File.Exists(_path))
+                    return null;
+                // attempt to load file
                 using (FileStream filestream = File.OpenRead(_path))
                 {
                     StreamReader streamreader = new StreamReader(filestream);

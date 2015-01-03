@@ -30,7 +30,7 @@ namespace SchemaBackup.Tests
                         },
                         SvnCredential = new SvnCredential
                         {
-                            Path = new Uri("VisualSVN path"),
+                            Path = new Uri("file:\\C:\\Users\\john\\documents\\visual studio 2010\\Projects\\proj"),
                             UserName = "testuser",
                             Password = "testpassword"
                         },
