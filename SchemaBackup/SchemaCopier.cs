@@ -10,7 +10,7 @@ namespace SchemaBackup.Service
 {
     public class SchemaCopier
     {
-        private string[] DbConnectionStrings;
+        //private string[] DbConnectionStrings;
 
         public SchemaCopier(SqlConnection sqlConnection)
         {

@@ -19,7 +19,7 @@ namespace SchemaBackup.AdminApp
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window, IDisposable
     {
         private SettingsSerialisation SettingsSerialisation;
 
@@ -30,7 +30,7 @@ namespace SchemaBackup.AdminApp
         
         private void Window_Closed(object sender, EventArgs e)
         {
-            SettingsSerialisation.Dispose();
+            
         }
         
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -43,6 +43,17 @@ namespace SchemaBackup.AdminApp
         {
             AboutWindow aboutwindow = new AboutWindow();
             aboutwindow.Show();
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+        }
+
+        private void Dispose(bool doDispose)
+        {
+            if (doDispose)
+                SettingsSerialisation.Dispose();
         }
     }
 }
