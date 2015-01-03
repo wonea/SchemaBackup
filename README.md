@@ -8,7 +8,7 @@ Limitations
 <ol>
 <li>Currently only exports DB schema to a working folder, no SVN upload yet</li>
 <li>Admin Application is a work in progress</li>
-<ol>
+</ol>
 
 Software Requirements
 ---------------------
