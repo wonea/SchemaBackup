@@ -22,20 +22,22 @@ namespace SchemaBackup.Tests
                         Name = "Test Schema",
                         WorkingPath = @"C:\Temp\",
                         DBConnectionStr = "test",
-                        VpnCredential = 
-                            new VpnCredential
-                            {
-                                HostName = "test",
-                                Username = "test",
-                                Password = "test"
-                            },
-                        SvnCredential = 
-                            new SvnCredential
-                            {
-                                Path = new Uri("VisualSVN path"),
-                                UserName = "testuser",
-                                Password = "testpassword"
-                            }
+                        VpnCredential = new VpnCredential
+                        {
+                            HostName = "test",
+                            Username = "test",
+                            Password = "test"
+                        },
+                        SvnCredential = new SvnCredential
+                        {
+                            Path = new Uri("VisualSVN path"),
+                            UserName = "testuser",
+                            Password = "testpassword"
+                        },
+                        CheckFrequency = new CheckFrequency
+                        {
+                            Frequency = " 0 0 12 1/1 * ? * "
+                        }
                     }
                 }
             };

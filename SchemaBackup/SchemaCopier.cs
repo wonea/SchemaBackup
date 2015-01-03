@@ -5,14 +5,13 @@ using System.Text;
 using System.Data.SqlClient;
 using System.Data;
 using SchemaBackup.Service.Properties;
+using SchemaBackup.Definitions;
 
 namespace SchemaBackup.Service
 {
     public class SchemaCopier
     {
-        //private string[] DbConnectionStrings;
-
-        public SchemaCopier(SqlConnection sqlConnection)
+        public SchemaCopier(SchemaSetting schemaSetting)
         {
             Initialise();
         }

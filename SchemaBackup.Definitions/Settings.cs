@@ -35,6 +35,10 @@ namespace SchemaBackup.Definitions
         /// Database connection string
         /// </summary>
         public string DBConnectionStr { get; set; }
+        /// <summary>
+        /// Check Frequency
+        /// </summary>
+        public CheckFrequency CheckFrequency { get; set; }
     }
 
     /// <summary>
@@ -64,5 +68,16 @@ namespace SchemaBackup.Definitions
         /// Password to use
         /// </summary>
         public string Password { get; set; }
+    }
+
+    /// <summary>
+    /// Check Frequency i.e. when a schema will be checked
+    /// </summary>
+    public class CheckFrequency
+    {
+        /// <summary>
+        /// CRON string representing time intervals
+        /// </summary>
+        public string Frequency { get; set; }
     }
 }
