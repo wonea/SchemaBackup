@@ -9,6 +9,7 @@ using System.Text;
 using System.Windows.Controls;
 using System.Windows.Input;
 using SchemaBackup.AdminApp.Commands;
+using System.Globalization;
 
 namespace SchemaBackup.AdminApp
 {
@@ -45,7 +46,8 @@ namespace SchemaBackup.AdminApp
         public string LogStr { get; set; }
         public void LogMessage(string message)
         {
-            LogStr += String.Format("{0}{1}", Environment.NewLine, message);
+            string datetimestr = DateTime.Now.ToString("d", CultureInfo.CurrentCulture);
+            LogStr += String.Format("{0}{1} - {2}", Environment.NewLine, datetimestr, message);
         }
 
         public bool ScrollToBottom { get; set; }

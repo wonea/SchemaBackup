@@ -2,7 +2,8 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:ucontrols="clr-namespace:SchemaBackup.AdminApp.UserControls"
-        Title="T-SQL Schema Backup Admin" Height="350" Width="525"
+        Title="T-SQL Schema Backup Admin" 
+        Width="525" Height="350" MinWidth="500" MinHeight="350"
         Closed="Window_Closed" Loaded="Window_Loaded">
     <Grid>
         <Grid.RowDefinitions>
@@ -23,13 +24,14 @@
         <ListView Grid.Row="1"  Grid.Column="0" 
                   ItemsSource="{Binding SchemaNames}"
                   SelectedValue="{Binding SelectedSchemaName}" />
-        <StackPanel Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" 
-                    Name="deploymentStackPanel" Orientation="Vertical">
-            <ucontrols:BasicDetailsUserControl />
-            <ucontrols:CheckFrequencyUserControl />
-            <ucontrols:SvnUserControl />
-            <ucontrols:VpnUserControl />
-        </StackPanel>
+        <ScrollViewer Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2">
+            <StackPanel Name="deploymentStackPanel" Orientation="Vertical">
+                <ucontrols:BasicDetailsUserControl />
+                <ucontrols:CheckFrequencyUserControl />
+                <ucontrols:SvnUserControl />
+                <ucontrols:VpnUserControl />
+            </StackPanel>
+        </ScrollViewer>
         <Expander Grid.Row="2" Grid.ColumnSpan="2">
             <Expander.Header>
                 <StackPanel Orientation="Horizontal">
@@ -40,7 +42,7 @@
                               Content="Scroll to Bottom" />
                 </StackPanel>
             </Expander.Header>
-            <TextBox Name="LogTextBox" Text="{Binding LogStr}" TextChanged="LogTextBox_TextChanged"/>
+            <TextBox Name="LogTextBox" Text="{Binding LogStr}" TextChanged="LogTextBox_TextChanged" Height="120" />
         </Expander>
     </Grid>
 </Window>

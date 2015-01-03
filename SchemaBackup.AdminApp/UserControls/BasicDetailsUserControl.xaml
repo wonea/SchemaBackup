@@ -6,20 +6,25 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="50*" />
-            <ColumnDefinition Width="50*" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="32" />
-            <RowDefinition Height="32" />
-            <RowDefinition Height="32" />
-        </Grid.RowDefinitions>
-        <Label Grid.Column="0" Grid.Row="0" Content="Name" />
-        <TextBox Grid.Column="1" Grid.Row="0" Name="NameTextBox" Style="{StaticResource standardTextBoxStyle}" />
-        <Label Grid.Column="0" Grid.Row="1" Content="Working Path" />
-        <TextBox Grid.Column="1" Grid.Row="1" Name="WorkingPathTextBox" Style="{StaticResource standardTextBoxStyle}" />
-        <Label Grid.Column="0" Grid.Row="2" Content="Database Connection Str" />
-        <TextBox Grid.Column="1" Grid.Row="2" Name="DatabaseConnectionTextBox" Style="{StaticResource standardTextBoxStyle}" />
+        <GroupBox>
+            <GroupBox.Header>Basic Settings</GroupBox.Header>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="50*" />
+                    <ColumnDefinition Width="50*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="32" />
+                    <RowDefinition Height="32" />
+                    <RowDefinition Height="32" />
+                </Grid.RowDefinitions>
+                <Label Grid.Column="0" Grid.Row="0" Content="Name" />
+                <TextBox Grid.Column="1" Grid.Row="0" Name="NameTextBox" Style="{StaticResource standardTextBoxStyle}" />
+                <Label Grid.Column="0" Grid.Row="1" Content="Working Path" />
+                <TextBox Grid.Column="1" Grid.Row="1" Name="WorkingPathTextBox" Style="{StaticResource standardTextBoxStyle}" />
+                <Label Grid.Column="0" Grid.Row="2" Content="Database Connection Str" />
+                <TextBox Grid.Column="1" Grid.Row="2" Name="DatabaseConnectionTextBox" Style="{StaticResource standardTextBoxStyle}" />
+            </Grid>
+        </GroupBox>
     </Grid>
 </UserControl>
