@@ -30,6 +30,7 @@ namespace SchemaBackup.Tests
             Settings.Default.ObjectsToIgnore.CopyTo(IgnoredObjects, 0);
         }
 
+        [TestCategory("Schema Object")]
         [TestMethod]
         public void GetObjectInfo()
         {
@@ -37,6 +38,7 @@ namespace SchemaBackup.Tests
                 SqlMethods.ExecuteDataTableReturnCommand(DbConnectionStrings[0], "sp_help @Name", new SqlParameter("Name", "Track"));
         }
 
+        [TestCategory("Schema Object")]
         [TestMethod]
         public void ProcessDatabaseObjects()
         {
@@ -77,6 +79,7 @@ namespace SchemaBackup.Tests
             schemaObject.GetInfo();
         }
 
+        [TestCategory("Schema Object")]
         [TestMethod]
         public void GetFolderPath()
         {

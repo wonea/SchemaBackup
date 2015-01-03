@@ -28,13 +28,13 @@ namespace SchemaBackup.Scheme
             Initialise();
         }
 
-        public void Initialise()
+        public new void Initialise()
         {
             GetLastUpdate();
             GetInfo();
         }
 
-        public void GetInfo()
+        public new void GetInfo()
         {
             string sql = "sp_help @Name";
             IEnumerable<DataTable> datatables =
