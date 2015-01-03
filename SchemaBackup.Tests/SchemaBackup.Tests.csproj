@@ -56,7 +56,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="SchemaObjects.cs" />
+    <Compile Include="SchemaSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

@@ -7,28 +7,58 @@ namespace SchemaBackup.Definitions
 {
     public class SchemaSettings
     {
-        public SchemaSetting[] Settings;
+        public IEnumerable<SchemaSetting> Settings;
     }
 
+    /// <summary>
+    /// Complete settings for a schema
+    /// </summary>
     public class SchemaSetting
     {
+        /// <summary>
+        /// Local Working Path (used to keeping a copy of the schema locally)
+        /// </summary>
         public string WorkingPath { get; set; }
+        /// <summary>
+        /// VPN Credentials
+        /// </summary>
         public VpnCredential VpnCredential { get; set; }
+        /// <summary>
+        /// SVN Credentials
+        /// </summary>
         public SvnCredential SvnCredential { get; set; }
+        /// <summary>
+        /// Database connection string
+        /// </summary>
         public string DBConnectionStr { get; set; }
     }
 
+    /// <summary>
+    /// Optional: VPN Credentials to gain access to database
+    /// </summary>
     public class VpnCredential
     {
-        public string VpnHostName { get; set; }
-        public string VpnUsername { get; set; }
-        public string VpnPassword { get; set; }
+        public string HostName { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
     }
 
+    /// <summary>
+    /// SVN Credentials for committing schema
+    /// </summary>
     public class SvnCredential
     {
-        public string Path { get; set; }
-        public string Username { get; set; }
+        /// <summary>
+        /// Path to commit to
+        /// </summary>
+        public Uri Path { get; set; }
+        /// <summary>
+        /// UserName to use
+        /// </summary>
+        public string UserName { get; set; }
+        /// <summary>
+        /// Password to use
+        /// </summary>
         public string Password { get; set; }
     }
 }

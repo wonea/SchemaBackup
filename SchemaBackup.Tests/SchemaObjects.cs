@@ -13,7 +13,7 @@ using SchemaBackup.Scheme;
 namespace SchemaBackup.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class SchemaObjects
     {
         public string[] DbConnectionStrings;
         public string WorkingPath;

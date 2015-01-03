@@ -2,11 +2,9 @@ bin/
 obj/
 *.exe
 *.suo
-SchemaBackup.suo
 *.cache
 *.pdb
 *.dll
 *.userprefs
 *.manifest
 SchemaBackup.userprefs
-*.suo
