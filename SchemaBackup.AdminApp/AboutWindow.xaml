@@ -1,16 +1,28 @@
 ﻿<Window x:Class="SchemaBackup.AdminApp.AboutWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="AboutWindow" Height="129" Width="297" ResizeMode="NoResize">
+        Title="AboutWindow" Height="251" Width="442" ResizeMode="NoResize"
+        Icon="Images/applogo.ico">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="75*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <Label>T-SQL Schema Backup 2015 by Gareth Brown</Label>
-        <StackPanel Grid.Row="1" Style="{StaticResource windowStackPanelStyle}">
-            <Button Name="cancelButton" 
-                    Style="{StaticResource standardCloseButtonStyle}" Click="cancelButton_Click" />
+        <Image Source="Images\applogo.png" Height="200" Grid.RowSpan="2"/>
+        <StackPanel Grid.Column="1" Grid.Row="0">
+            <Label>T-SQL Schema Backup 2015</Label>
+            <Label>by Gareth Brown</Label>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="2"
+                    Style="{StaticResource windowStackPanelStyle}"
+                    HorizontalAlignment="Right">
+            <Button Name="cancelButton"
+                    Style="{StaticResource standardCloseButtonStyle}"
+                    Click="cancelButton_Click" />
         </StackPanel>
     </Grid>
 </Window>

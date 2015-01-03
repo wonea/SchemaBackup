@@ -46,7 +46,7 @@ namespace SchemaBackup.AdminApp
         public string LogStr { get; set; }
         public void LogMessage(string message)
         {
-            string datetimestr = DateTime.Now.ToString("d", CultureInfo.CurrentCulture);
+            string datetimestr = DateTime.Now.ToString("f", CultureInfo.CurrentCulture);
             LogStr += String.Format("{0}{1} - {2}", Environment.NewLine, datetimestr, message);
         }
 

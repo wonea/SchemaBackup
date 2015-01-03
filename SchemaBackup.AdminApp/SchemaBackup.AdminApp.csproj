@@ -56,6 +56,9 @@
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Images\applogo.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -171,6 +174,21 @@
       <Project>{7705577B-CF01-43DC-8C8F-ED78770717CC}</Project>
       <Name>SchemaBackup.Definitions</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\document-open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\media-playback-start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\help-browser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\applogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\applogo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

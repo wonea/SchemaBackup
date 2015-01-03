@@ -4,7 +4,8 @@
         xmlns:ucontrols="clr-namespace:SchemaBackup.AdminApp.UserControls"
         Title="T-SQL Schema Backup Admin" 
         Width="525" Height="350" MinWidth="500" MinHeight="350"
-        Closed="Window_Closed" Loaded="Window_Loaded">
+        Closed="Window_Closed" Loaded="Window_Loaded"
+        Icon="Images/applogo.ico">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="60" />
@@ -16,10 +17,25 @@
             <ColumnDefinition Width="75*" />
         </Grid.ColumnDefinitions>
         <ToolBar Grid.Row="0" Grid.ColumnSpan="2">
-            <Button ToolTip="Open Configuration" Name="openButton">Open</Button>
-            <Button ToolTip="Deploy Configuration" Name="deployButton">Deploy</Button>
-            <Button ToolTip="About" Name="aboutButton" Content="About"
-                    Command="{Binding AboutCommand}" CommandParameter="{Binding}" />
+            <Button ToolTip="Open Configuration" Name="openButton">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="Images\document-open.png" Style="{StaticResource toolbarImageStyle}" />
+                    <Label>Open</Label>
+                </StackPanel>
+            </Button>
+            <Button ToolTip="Deploy Configuration" Name="deployButton">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="Images\media-playback-start.png" Style="{StaticResource toolbarImageStyle}" />
+                    <Label>Deploy</Label>
+                </StackPanel>
+            </Button>
+            <Button ToolTip="About" Name="aboutButton"
+                    Command="{Binding AboutCommand}" CommandParameter="{Binding}">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="Images\help-browser.png" Style="{StaticResource toolbarImageStyle}" />
+                    <Label>About</Label>
+                </StackPanel>
+            </Button>
         </ToolBar>
         <ListView Grid.Row="1"  Grid.Column="0" 
                   ItemsSource="{Binding SchemaNames}"
