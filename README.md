@@ -1,12 +1,14 @@
-SchemaBackup
-============
+T-SQL Schema Backup
+===================
 
-Intended as SQL Server backup tool, backup to SVN.
+Intended as SQL Server backup to SVN tool. To bring rouge databases under source control, or least have visibility of what's going on.
 
 Limitations
 -----------
-
-Currently only exports DB schema to a working folder, no SVN upload yet
+<ol>
+<li>Currently only exports DB schema to a working folder, no SVN upload yet</li>
+<li>Admin Application is a work in progress
+<ol>
 
 Software Requirements
 ---------------------
@@ -19,5 +21,6 @@ TODO
 ----
 <ol>
 <li>Upload to SVN</li>
-<li>Manage VPN settings to DB</li>
+<li>Manage VPN settings to DB via a desktop application</li>
+<li>Implement VPN functionality
 </ol>
