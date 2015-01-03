@@ -16,6 +16,10 @@ namespace SchemaBackup.Definitions
     public class SchemaSetting
     {
         /// <summary>
+        /// Name of schema
+        /// </summary>
+        public string Name { get; set; }
+        /// <summary>
         /// Local Working Path (used to keeping a copy of the schema locally)
         /// </summary>
         public string WorkingPath { get; set; }

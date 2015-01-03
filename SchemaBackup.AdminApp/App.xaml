@@ -12,6 +12,9 @@
         <Style x:Key="standardPasswordBoxStyle" TargetType="PasswordBox" >
             <Setter Property="Height" Value="32" />
         </Style>
+        <Style x:Key="standardCheckBoxBoxStyle" TargetType="CheckBox" >
+            <Setter Property="VerticalAlignment" Value="Center" />
+        </Style>
         <!-- Row Definition -->
         <Style x:Key="standardRowDefinitionStyle" TargetType="RowDefinition" >
             <Setter Property="Height" Value="36" />

@@ -1,18 +1,16 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using SchemaBackup.Definitions;
-using SchemaBackup.Core;
-using System.IO;
+﻿using SchemaBackup.Definitions;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace SchemaBackup.Tests
+namespace SchemaBackup.Core.ExampleObjects
 {
-    [TestClass]
-    public class SchemaSettingTests
+    public static class ExampleObjects
     {
-        [TestMethod]
-        public void SaveSettings()
+        public static SchemaSettings SchemaSettings()
         {
-            // build example schema settings
             var schemasetting = new SchemaSettings
             {
                 Settings = new[]
@@ -39,11 +37,7 @@ namespace SchemaBackup.Tests
                     }
                 }
             };
-            // export schema
-            const string workingpathfile = @"C:\Temp\SchemaBackupTest\settings.xml";
-            var settingserialisation = new SettingsSerialisation(workingpathfile);
-            // check file exists
-            Assert.IsTrue(File.Exists(workingpathfile));
+            return schemasetting;
         }
     }
 }

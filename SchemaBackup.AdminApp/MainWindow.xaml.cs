@@ -19,10 +19,8 @@ namespace SchemaBackup.AdminApp
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window, IDisposable
+    public partial class MainWindow : Window
     {
-        private SettingsSerialisation SettingsSerialisation;
-
         public MainWindow()
         {
             InitializeComponent();
@@ -35,8 +33,8 @@ namespace SchemaBackup.AdminApp
         
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            SettingsSerialisation = new SettingsSerialisation(Settings.Default.SettingFileLocation);
-            SettingsSerialisation.Load();
+            // bind view model
+            DataContext = new AppViewModel();
         }
 
         private void aboutButton_Click(object sender, RoutedEventArgs e)
@@ -45,15 +43,9 @@ namespace SchemaBackup.AdminApp
             aboutwindow.Show();
         }
 
-        public void Dispose()
+        private void LogTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            Dispose(true);
-        }
-
-        private void Dispose(bool doDispose)
-        {
-            if (doDispose)
-                SettingsSerialisation.Dispose();
+            LogTextBox.ScrollToEnd();
         }
     }
 }

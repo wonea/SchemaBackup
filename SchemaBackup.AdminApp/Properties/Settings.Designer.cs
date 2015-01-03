@@ -23,15 +23,24 @@ namespace SchemaBackup.AdminApp.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("C:\\SchemaBackupTemp\\settings.xml")]
         public string SettingFileLocation {
             get {
                 return ((string)(this["SettingFileLocation"]));
             }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ScrollToBottom {
+            get {
+                return ((bool)(this["ScrollToBottom"]));
+            }
             set {
-                this["SettingFileLocation"] = value;
+                this["ScrollToBottom"] = value;
             }
         }
     }
